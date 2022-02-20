@@ -1,6 +1,12 @@
 def sum(lst, n):
     # Your code here!
-    return False
+    num = 0
+    for element in lst:
+        num += element
+    if num == n:
+        return True;
+    else:
+        return False;
 
 def test():
     assert sum([-1, 1], 0)
